@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LISB|Navigation</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:100|Crimson+Text|Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
+
+    <link href="./css/navigation.css" rel="stylesheet" type="text/css">    
+	<link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+    <script src="./libs/jquery-2.1.4.min.js"></script>
+
+    <script src="./libs/three.js"></script>
+    <script src="./libs/Detector.js"></script>
+	<script src="./libs/loader/ColladaLoader.js"></script>
+	<script src="./libs/controls/TrackballControls.js"></script>
+    <script src="./libs/tween.min.js"></script>
+
+    <script src="./js/navigation.js"></script>
+
+
+</head>
+<body>
+<div id="header">
+<div id="header-box">
+	<div id="logo">
+		<a id="iconLink" href="./index.html" target="_self"><img id="icon" src="./images/logo/uo_logo gray.png" alt="icon"></a>
+	</div>
+	<div id="title"><a href="./index.html" target="_self">Lewis Integrative Science Building(Demo)</a></div>
+
+	<div id="menu">
+		<ul id="nav">
+			<li><a href="./index.html" target="_self">Exterior</a></li>
+            <li><a href="./interior.html" target="_self">Interior</a></li>                 
+			<li><a href="./navigation.html" target="_self">Navigation</a></li>
+			<li><a href="./temperature.html" target="_self">Temperature</a></li>
+            <li><a href="./energy.html" target="_self">Energy</a></li> 
+            <li><a href="./activity.html" target="_self">Activity</a></li>                 
+                            
+		</ul>
+	</div>
+</div>
+</div>
+
+<div id="model">
+            <div id="camera">
+                    <button id="unstack">Unstack</button>
+                    <button id="stack">Stack</button>
+                    <button id="cam1">Top View</button>
+                    <button id="cam2">Perspective</button>
+            </div>
+
+            <div id="floor">
+                    <button id="floor1">1st Floor</button>
+                    <button id="floor2">2nd Floor</button>
+                    <button id="floor3">3rd Floor</button>
+                    <button id="floor4">4th Floor</button>
+            </div>
+            <div id="load"></div>
+
+    <div id="container">         
+    </div>
+</div><!--end of model div-->
+
+<div id="control">
+    <div id="control-box">
+        <div id="control-panel">
+        	<div id="search">
+
+        		<input id="room-name" type="text" value="Type in room name here!">
+                <button id="search-button" type="button">Search</button>
+
+        	</div>
+			<div id="activity">
+        		<button id="forward" type="button">Forward</button>
+        		<button id="backward" type="button">Backward</button>
+        		<button id="left" type="button">Left</button>
+        		<button id="right" type="button">Right</button>
+                <button id="up" type="button">Go Up</button>
+                <button id="down" type="button">Go Down</button> 
+                              
+        		<!-- <button id="stay" type="button">Stay</button>
+        		<button id="move" type="button">Move</button> -->
+
+			</div>
+
+
+        </div>
+
+        <div id="instruction">
+                <h3>Instructions:</h3>
+                <p>1. Hold down left mouse button to rotate the model. Hold down right mouse button to move the model. Use middle mouse button to zoom in or zoom out.<br>
+                2. Use stack / unstack options to change the layout of the floors.<br>
+                3. Use floor options to show / hide the floors<br>
+                4. Control panel at the bottom: Use search button to search for a room.<br>
+                5. Use movement button to move the green avatar in the space. You can also use WASD Keys to move the avatar: W = Move forward; S = Move backward; A = Move left; D = Move right; F = Go down, R = Go up.
+                </p>
+        </div>
+    </div>
+</div><!--end of control div-->
+
+
+<div id="footer">
+    <div id="footer-box">
+        <div id="info_1">
+            <h3 class="info_title"><a class="link" href="http://www.uoregon.edu/" target= "_blank">University of Oregon</a></h3>
+            <p class="info_text"><a class="link" href="https://aaa.uoregon.edu/" target="_blank">School of Architecture and Allied Arts</a></p>
+
+            <h3 class="info_title">Graduate Study Committee:</h3>
+            <p class="info_text">Mark Donofrio,
+            Nancy Cheng,
+            Philip Speranza</p>
+            <h3 class="info_title">Special Thanks:</h3>
+            <p class="info_text">Alison Kwok,
+            Wanita Tiburcio
+            </p>
+
+        </div>
+
+        <div id="info_2">
+            <h3 class="info_title">Graduate Student:</h3>
+            <p class="info_text">Baolin Xu</p>            
+            <h3 class="info_title">Contact:</h3>
+            <p class="info_text">Email:<a class="link" href="mailto:baolin.xu@yahoo.com">baolin.xu@yahoo.com</a><br>
+            Website:<a class="link" href="http://www.baolin-x.com/" target="_blank">www.baolin-x.com</a></p>
+            <p id="copy-right">&#169 2015 | Some Rights Reserved</p>
+        </div>
+        <div id="info_3">
+            <h3 class="info_title">Building Designed By: </h3>
+            <p class="info_text">HDR, Inc.</p>
+            <p class="info_text">THA Architecture, Inc.</p>            
+        </div>         
+    </div>
+</div>
+
+</body>
+</html>
